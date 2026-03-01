@@ -1,0 +1,18 @@
+    1  sudo apt update
+    2  sudo apt install awscli -y
+    3  sudo apt install unzip -y
+    4  sudo apt install awscli -y
+    5  ls
+    6  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    7  ls
+    8  sudo unzip awscliv2.zip
+    9  aws --version
+   10  sudo aws --version
+   11  sudo ./aws/install
+   12  sudo aws --version
+   13  aws s3 ls
+   14  aws ec2 ls
+   15  sudo s3 ls
+   16  ls
+   17  sudo aws --version
+   18  aws s3 ls

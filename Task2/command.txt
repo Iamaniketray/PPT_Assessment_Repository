@@ -1,0 +1,8 @@
+ 1  lsblk
+    2  sudo fdisk /dev/nvme1n1
+    3  lsblk
+    4  sudo mkfs.xfs /dev/nvme1n1p1
+    5  sudo mkdir /data
+    6  sudo mount /dev/nvme1n1p1 /data
+    7  df -h
+    8  history
