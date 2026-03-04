@@ -1,0 +1,49 @@
+# AWS Multi-AZ Highly Available Web Application
+
+## 📌 Project Objective
+
+Deploy a fault-tolerant and highly available web application across multiple Availability Zones using AWS core services.
+
+## 🏗️ Architecture Overview
+
+This project uses:
+
+* Custom VPC (10.0.0.0/16)
+* 2 Public Subnets (Multi-AZ)
+* 2 Private Subnets (Multi-AZ)
+* Internet Gateway & NAT Gateway
+* EC2 Instances (Private Subnets)
+* Application Load Balancer (Public Subnets)
+* Auto Scaling Group (Min:2, Desired:2)
+* S3 Bucket for static assets
+* CloudWatch Alarm (CPU > 70%)
+
+## ⚙️ Services Used
+
+* Amazon Web Services
+* Amazon EC2
+* Amazon VPC
+* Elastic Load Balancing
+* Amazon S3
+* Amazon CloudWatch
+* AWS Auto Scaling
+
+## 🚀 Deployment Steps
+
+1. Created custom VPC and subnets across multiple AZs.
+2. Configured Internet Gateway and NAT Gateway.
+3. Launched EC2 instances in private subnets.
+4. Configured ALB in public subnets.
+5. Attached EC2 instances to Target Group.
+6. Configured Auto Scaling Group.
+7. Uploaded static content to S3.
+8. Created CloudWatch Alarm for CPU utilization > 70%.
+9. Tested application using ALB DNS URL.
+
+## 📊 Result
+
+The application remains available even if one Availability Zone fails. Auto Scaling ensures performance under high load.
+
+---
+
+**Status:** Successfully Deployed ✅
